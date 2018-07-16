@@ -13,7 +13,7 @@ const cardImages = {
     Turtwig:"https://cdn.bulbagarden.net/upload/thumb/5/5c/387Turtwig.png/250px-387Turtwig.png"
 };
 
-const cardNames = Object.keys(cardImages);
+// const cardNames = Object.keys(cardImages);
 // ["Charmander", "Squirtle", ...]
 /* 
 To select name, 
@@ -27,4 +27,4 @@ cardNames[cardNames.indexOf("Charmander")];
 */
 
 export default cardImages;
-export default cardNames;
+// export default cardNames;

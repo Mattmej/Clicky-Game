@@ -1,11 +1,14 @@
-import React, { Component } from 'react';
+// import React, { Component } from 'react';
+import React from "react";
 // import { Container, Row, Col } from 'reactstrap';
+import { Container, Jumbotron } from "reactstrap";
 
 // import logo from './logo.svg';
 // import './App.css';
 
-import cardImages from "./cardArrays";
-import cardNames from "./cardArrays";
+import ClickCard from "./components/ClickCard";
+import cardImages from "./cardImages";
+import cardNames from "./cardNames";
 
 // class App extends Component {
 //   render() {
@@ -25,8 +28,8 @@ import cardNames from "./cardArrays";
 
 
 const App = () => (
-  <Wrapper>
-    <Title>Clicky Game!</Title>
+  <Container>
+    <Jumbotron>Clicky Game!</Jumbotron>
 
     <ClickCard 
       name={cardNames[cardNames.indexOf("Charmander")]}
@@ -88,13 +91,8 @@ const App = () => (
       image={cardImages.Turtwig}
     />
 
-  </Wrapper>
+  </Container>
 
-
-
-
-
-
-)
+);
 
 export default App;
