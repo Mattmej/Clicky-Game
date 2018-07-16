@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+// import { Container, Row, Col } from 'reactstrap';
+
 // import logo from './logo.svg';
 // import './App.css';
 
@@ -26,20 +28,65 @@ const App = () => (
   <Wrapper>
     <Title>Clicky Game!</Title>
 
-    <ClickCard />
-    <ClickCard />
-    <ClickCard />
-    <ClickCard />
+    <ClickCard 
+      name={cardNames[cardNames.indexOf("Charmander")]}
+      image={cardImages.Charmander}
+    />
 
-    <ClickCard />
-    <ClickCard />
-    <ClickCard />
-    <ClickCard />
+    <ClickCard 
+      name={cardNames[cardNames.indexOf("Squirtle")]}
+      image={cardImages.Squirtle}
+    />
 
-    <ClickCard />
-    <ClickCard />
-    <ClickCard />
-    <ClickCard />
+    <ClickCard 
+      name={cardNames[cardNames.indexOf("Bulbasaur")]}
+      image={cardImages.Bulbasaur}
+    />
+
+    <ClickCard 
+      name={cardNames[cardNames.indexOf("Cyndaquil")]}
+      image={cardImages.Cyndaquil}
+    />
+
+    <ClickCard 
+      name={cardNames[cardNames.indexOf("Totodile")]}
+      image={cardImages.Totodile}
+    />
+
+    <ClickCard 
+      name={cardNames[cardNames.indexOf("Chikorita")]}
+      image={cardImages.Chikorita}
+    />
+
+    <ClickCard 
+      name={cardNames[cardNames.indexOf("Torchic")]}
+      image={cardImages.Torchic}
+    />
+    
+    <ClickCard 
+      name={cardNames[cardNames.indexOf("Mudkip")]}
+      image={cardImages.Mudkip}
+    />
+
+    <ClickCard 
+      name={cardNames[cardNames.indexOf("Treecko")]}
+      image={cardImages.Treecko}
+    />
+
+    <ClickCard 
+      name={cardNames[cardNames.indexOf("Chimchar")]}
+      image={cardImages.Chimchar}
+    />
+
+    <ClickCard 
+      name={cardNames[cardNames.indexOf("Piplup")]}
+      image={cardImages.Piplup}
+    />
+
+    <ClickCard 
+      name={cardNames[cardNames.indexOf("Turtwig")]}
+      image={cardImages.Turtwig}
+    />
 
   </Wrapper>
 
