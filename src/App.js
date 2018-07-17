@@ -4,9 +4,10 @@ import React from "react";
 import { Container, Jumbotron, Row, Col } from "reactstrap";
 
 // import logo from './logo.svg';
-// import './App.css';
+import './App.css';
 
 import ClickCard from "./components/ClickCard";
+import ScoreNav from "./components/ScoreNav";
 import cardImages from "./cardImages";
 import cardNames from "./cardNames";
 
@@ -29,8 +30,9 @@ import cardNames from "./cardNames";
 
 const App = () => (
   <Container>
+    <ScoreNav></ScoreNav>
     <Jumbotron fluid>
-      <h1>Clicky Game!</h1>
+      <h1 className="jumbotron-format">Clicky Game!</h1>
     </Jumbotron>
 
     <Row>
