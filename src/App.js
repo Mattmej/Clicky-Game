@@ -29,85 +29,99 @@ import cardNames from "./cardNames";
 
 const App = () => (
   <Container>
-    <Jumbotron>Clicky Game!</Jumbotron>
+    <Jumbotron fluid>Clicky Game!</Jumbotron>
 
     <Row>
-      <Col xs="12" sm="6" md="4" lg="3">
+      <Col xs="12" sm="6" lg="3">
         <ClickCard 
           name={cardNames[cardNames.indexOf("Charmander")]}
           image={cardImages.Charmander}
         />
       </Col>
 
-      <Col xs="12" sm="6" md="4" lg="3">
+      <Col xs="12" sm="6" lg="3">
         <ClickCard 
           name={cardNames[cardNames.indexOf("Squirtle")]}
           image={cardImages.Squirtle}
         />
       </Col>
 
-      <Col xs="12" sm="6" md="4" lg="3">
+      <Col xs="12" sm="6" lg="3">
         <ClickCard 
           name={cardNames[cardNames.indexOf("Bulbasaur")]}
           image={cardImages.Bulbasaur}
         />
       </Col>
 
-      <Col xs="12" sm="6" md="4" lg="3">
+      <Col xs="12" sm="6" lg="3">
         <ClickCard 
           name={cardNames[cardNames.indexOf("Cyndaquil")]}
           image={cardImages.Cyndaquil}
         />
       </Col>
     </Row>
-
-
-    {/* <Row> */}
-      
-    {/* </Row> */}
+    
     
 
+    <Row>
+      <Col xs="12" sm="6" lg="3">
+        <ClickCard 
+          name={cardNames[cardNames.indexOf("Totodile")]}
+          image={cardImages.Totodile}
+        />
+      </Col>
 
+      <Col xs="12" sm="6" lg="3">
+        <ClickCard 
+          name={cardNames[cardNames.indexOf("Chikorita")]}
+          image={cardImages.Chikorita}
+        />
+      </Col>
 
-    <ClickCard 
-      name={cardNames[cardNames.indexOf("Totodile")]}
-      image={cardImages.Totodile}
-    />
+      <Col xs="12" sm="6" lg="3">
+        <ClickCard 
+          name={cardNames[cardNames.indexOf("Torchic")]}
+          image={cardImages.Torchic}
+        />
+      </Col>
 
-    <ClickCard 
-      name={cardNames[cardNames.indexOf("Chikorita")]}
-      image={cardImages.Chikorita}
-    />
-
-    <ClickCard 
-      name={cardNames[cardNames.indexOf("Torchic")]}
-      image={cardImages.Torchic}
-    />
+      <Col xs="12" sm="6" lg="3">
+        <ClickCard 
+          name={cardNames[cardNames.indexOf("Mudkip")]}
+          image={cardImages.Mudkip}
+        />
+      </Col>
+    </Row>
     
-    <ClickCard 
-      name={cardNames[cardNames.indexOf("Mudkip")]}
-      image={cardImages.Mudkip}
-    />
+    <Row>
+      <Col xs="12" sm="6" lg="3">
+        <ClickCard 
+          name={cardNames[cardNames.indexOf("Treecko")]}
+          image={cardImages.Treecko}
+        />
+      </Col>
 
-    <ClickCard 
-      name={cardNames[cardNames.indexOf("Treecko")]}
-      image={cardImages.Treecko}
-    />
+      <Col xs="12" sm="6" lg="3">
+        <ClickCard 
+          name={cardNames[cardNames.indexOf("Chimchar")]}
+          image={cardImages.Chimchar}
+        />
+      </Col>
 
-    <ClickCard 
-      name={cardNames[cardNames.indexOf("Chimchar")]}
-      image={cardImages.Chimchar}
-    />
+      <Col xs="12" sm="6" lg="3">
+        <ClickCard 
+          name={cardNames[cardNames.indexOf("Piplup")]}
+          image={cardImages.Piplup}
+        />
+      </Col>
 
-    <ClickCard 
-      name={cardNames[cardNames.indexOf("Piplup")]}
-      image={cardImages.Piplup}
-    />
-
-    <ClickCard 
-      name={cardNames[cardNames.indexOf("Turtwig")]}
-      image={cardImages.Turtwig}
-    />
+      <Col xs="12" sm="6" lg="3">
+        <ClickCard 
+          name={cardNames[cardNames.indexOf("Turtwig")]}
+          image={cardImages.Turtwig}
+        />
+      </Col>
+    </Row>
 
   </Container>
 
