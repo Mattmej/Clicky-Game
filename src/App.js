@@ -1,15 +1,17 @@
 // import React, { Component } from 'react';
 import React from "react";
 // import { Container, Row, Col } from 'reactstrap';
-import { Container, Jumbotron, Row, Col } from "reactstrap";
+import { Container, Jumbotron} from "reactstrap";
 
 // import logo from './logo.svg';
 import './App.css';
 
-import ClickCard from "./components/ClickCard";
+// import ClickCard from "./components/ClickCard";
 import ScoreNav from "./components/ScoreNav";
-import cardImages from "./cardImages";
-import cardNames from "./cardNames";
+// import cardImages from "./cardImages";
+// import cardNames from "./cardNames";
+// import CardData from "./components/CardData";
+import CardDisplay from "./components/CardDisplay";
 
 // class App extends Component {
 //   render() {
@@ -28,19 +30,29 @@ import cardNames from "./cardNames";
 // }
 
 
-const App = () => (
-  <Container>
-    <ScoreNav></ScoreNav>
-    <Jumbotron fluid>
-      <h1 className="jumbotron-format">Clicky Game!</h1>
-      <p className="jumbotron-format">Click on an image to earn points, but don't click on any more than once!</p>
-    </Jumbotron>
+class App extends React.Component {
+  render() {
+    return(
+      <Container>
+        <ScoreNav></ScoreNav>
+        <Jumbotron fluid>
+          <h1 className="jumbotron-format">Clicky Game!</h1>
+          <p className="jumbotron-format">Click on an image to earn points, but don't click on any more than once!</p>
+        </Jumbotron>
 
-    <Row>
+        <CardDisplay cards={this.props.cards}/>
+      </Container>
+
+    )
+  }
+};
+  
+    /* <Row>
       <Col xs="12" sm="6" lg="3">
         <ClickCard 
-          name={cardNames[cardNames.indexOf("Charmander")]}
-          image={cardImages.Charmander}
+          // name={cardNames[cardNames.indexOf("Charmander")]}
+          // image={cardImages.Charmander}
+          name={}
         />
       </Col>
 
@@ -126,10 +138,9 @@ const App = () => (
           image={cardImages.Turtwig}
         />
       </Col>
-    </Row>
+    </Row> */
 
-  </Container>
 
-);
+
 
 export default App;
