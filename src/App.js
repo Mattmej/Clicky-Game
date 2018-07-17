@@ -1,7 +1,7 @@
 // import React, { Component } from 'react';
 import React from "react";
 // import { Container, Row, Col } from 'reactstrap';
-import { Container, Jumbotron } from "reactstrap";
+import { Container, Jumbotron, Row, Col } from "reactstrap";
 
 // import logo from './logo.svg';
 // import './App.css';
@@ -31,25 +31,43 @@ const App = () => (
   <Container>
     <Jumbotron>Clicky Game!</Jumbotron>
 
-    <ClickCard 
-      name={cardNames[cardNames.indexOf("Charmander")]}
-      image={cardImages.Charmander}
-    />
+    <Row>
+      <Col xs="12" sm="6" md="4" lg="3">
+        <ClickCard 
+          name={cardNames[cardNames.indexOf("Charmander")]}
+          image={cardImages.Charmander}
+        />
+      </Col>
 
-    <ClickCard 
-      name={cardNames[cardNames.indexOf("Squirtle")]}
-      image={cardImages.Squirtle}
-    />
+      <Col xs="12" sm="6" md="4" lg="3">
+        <ClickCard 
+          name={cardNames[cardNames.indexOf("Squirtle")]}
+          image={cardImages.Squirtle}
+        />
+      </Col>
 
-    <ClickCard 
-      name={cardNames[cardNames.indexOf("Bulbasaur")]}
-      image={cardImages.Bulbasaur}
-    />
+      <Col xs="12" sm="6" md="4" lg="3">
+        <ClickCard 
+          name={cardNames[cardNames.indexOf("Bulbasaur")]}
+          image={cardImages.Bulbasaur}
+        />
+      </Col>
 
-    <ClickCard 
-      name={cardNames[cardNames.indexOf("Cyndaquil")]}
-      image={cardImages.Cyndaquil}
-    />
+      <Col xs="12" sm="6" md="4" lg="3">
+        <ClickCard 
+          name={cardNames[cardNames.indexOf("Cyndaquil")]}
+          image={cardImages.Cyndaquil}
+        />
+      </Col>
+    </Row>
+
+
+    {/* <Row> */}
+      
+    {/* </Row> */}
+    
+
+
 
     <ClickCard 
       name={cardNames[cardNames.indexOf("Totodile")]}
