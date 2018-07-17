@@ -11,7 +11,7 @@ const ScoreNav = props => (
         </ul> */}
         {/* <Nav navbar> */}
             <NavItem>Clicky Game</NavItem>
-            <NavItem>Click an Image to Begin!</NavItem>
+            <NavItem id="feedback">Click an Image to Begin!</NavItem>
             <NavItem id="score-display"></NavItem>
         {/* </Nav> */}
         

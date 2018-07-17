@@ -33,6 +33,7 @@ const App = () => (
     <ScoreNav></ScoreNav>
     <Jumbotron fluid>
       <h1 className="jumbotron-format">Clicky Game!</h1>
+      <p className="jumbotron-format">Click on an image to earn points, but don't click on any more than once!</p>
     </Jumbotron>
 
     <Row>
