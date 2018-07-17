@@ -2,13 +2,7 @@ import React from "react";
 import "./ClickCard.css";
 // import CardData from "./CardData";
 
-// const ClickCard = props => (
-    // <div className = "card">
-    //     <div className = "img-container">
-    //         <img className = "image" alt = {props.name} src = {props.image}/>
-    //     </div>
-    // </div>
-// );
+
 
 class ClickCard extends React.Component {
     render() {

@@ -4,9 +4,7 @@ import ClickCard from "./ClickCard";
 
 class CardDisplay extends Component {
 
-    // shuffle = () => {
-        
-    // }
+
 
     render() {
         return(
