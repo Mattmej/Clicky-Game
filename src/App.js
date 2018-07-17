@@ -29,7 +29,9 @@ import cardNames from "./cardNames";
 
 const App = () => (
   <Container>
-    <Jumbotron fluid>Clicky Game!</Jumbotron>
+    <Jumbotron fluid>
+      <h1>Clicky Game!</h1>
+    </Jumbotron>
 
     <Row>
       <Col xs="12" sm="6" lg="3">

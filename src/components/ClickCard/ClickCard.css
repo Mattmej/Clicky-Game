@@ -1,3 +1,8 @@
 .card {
     margin-bottom: 30px;
 }
+
+.image {
+    display: block;
+    margin: 0 auto;
+}
