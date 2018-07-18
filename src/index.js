@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-import CardData from "./components/CardData";
+// import CardData from "./components/CardData";
 
-ReactDOM.render(<App cards={CardData}/>, document.getElementById('root'));
+// ReactDOM.render(<App cards={CardData}/>, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
+
 registerServiceWorker();
