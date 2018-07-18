@@ -1,6 +1,7 @@
 import React from "react";
 import "./ClickCard.css";
 // import CardData from "./CardData";
+import ScoreNav from "../ScoreNav/ScoreNav";
 
 
 

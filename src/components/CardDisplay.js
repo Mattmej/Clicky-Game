@@ -17,6 +17,10 @@ class CardDisplay extends Component {
     //     return array;
     // }
 
+    handleIncrement = () => {
+        this.setState({score: this.state.score += 1});
+    };
+
     render() {
         return(
             <div className="row">
@@ -27,7 +31,7 @@ class CardDisplay extends Component {
                 {this.props.cardData.map((card) => {
 
                     // Returns a card with props.card = [an object in the array]
-                    return <ClickCard card={card}/>
+                    return <ClickCard card={card} onClick={this.handleIncrement}/>
                 })
                 }
 
