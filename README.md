@@ -25,4 +25,4 @@ Every time the player selects a card that has not yet been selected, they receiv
 
 Once the player has ten points, the player wins.
 
-[Test Link](./gifs/winning)
+[Test Link](https://github.com/Mattmej/Clicky-Game/blob/master/gifs/Winning.gif
