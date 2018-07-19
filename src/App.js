@@ -131,7 +131,7 @@ class App extends React.Component {
                 // if the number of correct answers is greater than the top score,
                 // then the top score will equal the number of correct answers plus one.
                 // Otherwise, stay as the current top score.
-                topscore: this.state.score > this.state.topscore ? this.state.score + 1 : this.state.topscore,
+                topscore: this.state.score >= this.state.topscore ? this.state.score + 1 : this.state.topscore,
                 message: "Correct!"
 
             })
