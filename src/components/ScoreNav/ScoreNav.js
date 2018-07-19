@@ -42,7 +42,7 @@ import ScoreDisplay from "./ScoreDisplay";
 const ScoreNav = (props) => (
     <Navbar className="fixed-top" color="success">
         <NavItem>Clicky Game</NavItem>
-        <NavItem id="feedback">Click an Image to Begin!</NavItem>
+        <NavItem id="feedback">{props.message}</NavItem>
         <ScoreDisplay 
             score = {props.score}
             topscore = {props.topscore}
