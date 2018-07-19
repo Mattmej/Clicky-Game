@@ -94,11 +94,60 @@ class App extends React.Component {
     state = {
         picked: [],
         score: 0,
-        topscore: 0
+        topscore: 0,
+        message: "Click an image to begin!"
     };
 
+            // Fisher-Yates shuffle
+  shuffleCards = (array) => {
+    let m = array.length, t, i;
+
+    // While there remain elements to shuffle…
+    while (m) {
+  
+      // Pick a remaining element…
+      i = Math.floor(Math.random() * m--);
+  
+      // And swap it with the current element.
+      t = array[m];
+      array[m] = array[i];
+      array[i] = t;
+    }
+  
+    return array;
+  }
+
     selectImg = (name) => {
-        
+        let picked = this.state.picked;
+
+        // If the image selected is not inside of the "picked" array,
+        // then the user has selected the correct card
+        // and the score goes up by 1.
+        if (picked.indexOf(name) === -1) {
+            this.setState({
+                picked: picked.concat(name),
+                score: this.state.score + 1,
+                
+                // if the number of correct answers is greater than the top score,
+                // then the top score will equal the number of correct answers plus one.
+                // Otherwise, stay as the current top score.
+                topscore: this.state.score > this.state.topscore ? this.state.score + 1 : this.state.topscore,
+                message: "Correct!"
+
+            })
+        }
+
+        // If the image selected IS in the "picked" array,
+        // then the user has selected the incorrect card
+        // and the score resets and the "picked" array empties.
+        else {
+            this.setState({
+                message: "Incorrect!",
+                score: 0,
+                picked: []
+            })
+        }
+
     }
 
 
@@ -110,13 +159,14 @@ class App extends React.Component {
         <ScoreNav 
             score = {this.state.score}
             topscore = {this.state.topscore}
+            message = {this.state.message}
         />
         <Jumbotron fluid>
           <h1 className="jumbotron-format">Clicky Game!</h1>
           <p className="jumbotron-format">Click on an image to earn points, but don't click on any more than once!</p>
         </Jumbotron>
 
-        <CardDisplay cardData={cardData} score = {this.state.score}/>
+        <CardDisplay cardData={cardData} score = {this.state.score} shuffleCards = {this.shuffleCards}/>
       </Container>
 
     )
