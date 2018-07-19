@@ -135,6 +135,7 @@ class App extends React.Component {
                 message: "Correct!"
 
             })
+            this.shuffleCards(cardData);
         }
 
         // If the image selected IS in the "picked" array,
@@ -146,6 +147,7 @@ class App extends React.Component {
                 score: 0,
                 picked: []
             })
+            this.shuffleCards(cardData);
         }
 
     }
@@ -166,7 +168,7 @@ class App extends React.Component {
           <p className="jumbotron-format">Click on an image to earn points, but don't click on any more than once!</p>
         </Jumbotron>
 
-        <CardDisplay cardData={cardData} score = {this.state.score} shuffleCards = {this.shuffleCards}/>
+        <CardDisplay cardData={cardData} score = {this.state.score} shuffleCards = {this.shuffleCards} selectImg = {this.selectImg}/>
       </Container>
 
     )
