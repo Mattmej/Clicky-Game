@@ -23,6 +23,7 @@ This application displays twelve individual pokemon cards to the webpage. The ob
 
 Every time the player selects a card that has not yet been selected, they receive one point. If the player selects any card that has already been selected, their points reset to zero. However, the app still keeps track of the user's highest score.
 
-Once the player has ten points, the player wins.
+[Demonstration](https://github.com/Mattmej/Clicky-Game/blob/master/gifs/Basic-Functionality.gif)
 
-[Test Link](https://github.com/Mattmej/Clicky-Game/blob/master/gifs/Winning.gif)
+
+Once the player has ten points, [the player wins.](https://github.com/Mattmej/Clicky-Game/blob/master/gifs/Winning.gif)
