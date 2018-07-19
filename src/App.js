@@ -111,37 +111,55 @@ class App extends React.Component {
     selectImg = (name) => {
         let picked = this.state.picked;
 
-        // If the image selected is not inside of the "picked" array,
-        // then the user has selected the correct card
-        // and the score goes up by 1.
-        if (picked.indexOf(name) === -1) {
+        if (picked.length === 11) {
             this.setState({
-                picked: picked.concat(name),
-                score: this.state.score + 1,
-                
-                // if the number of correct answers is greater than the top score,
-                // then the top score will equal the number of correct answers plus one.
-                // Otherwise, stay as the current top score.
-                topscore: this.state.score >= this.state.topscore ? this.state.score + 1 : this.state.topscore,
-                message: "Correct!"
-
-            })
-            this.shuffleCards(cardData);
-        }
-
-        // If the image selected IS in the "picked" array,
-        // then the user has selected the incorrect card
-        // and the score resets and the "picked" array empties.
-        else {
-            this.setState({
-                message: "Incorrect!",
+                message: "You Won!",
                 score: 0,
-                picked: []
+                picked:[],
+                topscore: 12
             })
             this.shuffleCards(cardData);
         }
 
+        else {
+
+            // If the image selected is not inside of the "picked" array,
+            // then the user has selected the correct card
+            // and the score goes up by 1.
+            if (picked.indexOf(name) === -1) {
+                this.setState({
+                    picked: picked.concat(name),
+                    score: this.state.score + 1,
+                    
+                    // if the number of correct answers is greater than the top score,
+                    // then the top score will equal the number of correct answers plus one.
+                    // Otherwise, stay as the current top score.
+                    topscore: this.state.score >= this.state.topscore ? this.state.score + 1 : this.state.topscore,
+                    message: "Correct!"
+
+                })
+                this.shuffleCards(cardData);
+            }
+
+            // If the image selected IS in the "picked" array,
+            // then the user has selected the incorrect card
+            // and the score resets and the "picked" array empties.
+            else {
+                this.setState({
+                    message: "Incorrect!",
+                    score: 0,
+                    picked: []
+                })
+                this.shuffleCards(cardData);
+            }
+
+
+        }
     }
+
+        
+
+    
 
 
 
