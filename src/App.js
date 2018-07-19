@@ -1,15 +1,13 @@
 // import React, { Component } from 'react';
 import React from "react";
 // import { Container, Row, Col } from 'reactstrap';
-import { Container, Jumbotron, Row, Col} from "reactstrap";
+import { Container, Jumbotron} from "reactstrap";
 
 // import logo from './logo.svg';
 import './App.css';
 
 // import ClickCard from "./components/ClickCard";
 import ScoreNav from "./components/ScoreNav";
-import ClickCard from "./components/ClickCard";
-
 // import cardImages from "./cardImages";
 // import cardNames from "./cardNames";
 // import CardData from "./components/CardData";
@@ -157,7 +155,6 @@ class App extends React.Component {
 
 
 
-
   render() {
     return(
       <Container>
@@ -171,24 +168,7 @@ class App extends React.Component {
           <p className="jumbotron-format">Click on an image to earn points, but don't click on any more than once!</p>
         </Jumbotron>
 
-        {/* <CardDisplay cardData={cardData} score = {this.state.score} shuffleCards = {this.shuffleCards} selectImg = {this.selectImg}/> */}
-
-        {/* {this.shuffleCards(cardData).map((card) => {
-            // return <ClickCard card={card}/>
-            return (
-                <Row>
-                    <Col xs="12" sm="6" lg="3"><ClickCard card={card}/></Col>
-                </Row>
-            )
-        })} */}
-
-        <div className="row">
-
-            {this.shuffleCards(cardData).map((card) => {
-                return <ClickCard card={card} selectImg={this.selectImg}/>
-            })}
-
-        </div>
+        <CardDisplay cardData={cardData} score = {this.state.score} shuffleCards = {this.shuffleCards} selectImg = {this.selectImg}/>
       </Container>
 
     )
