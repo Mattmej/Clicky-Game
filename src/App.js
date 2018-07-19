@@ -1,16 +1,7 @@
-// import React, { Component } from 'react';
 import React from "react";
-// import { Container, Row, Col } from 'reactstrap';
 import { Container, Jumbotron} from "reactstrap";
-
-// import logo from './logo.svg';
 import './App.css';
-
-// import ClickCard from "./components/ClickCard";
 import ScoreNav from "./components/ScoreNav";
-// import cardImages from "./cardImages";
-// import cardNames from "./cardNames";
-// import CardData from "./components/CardData";
 import CardDisplay from "./components/CardDisplay";
 
 let cardData = [

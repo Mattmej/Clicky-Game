@@ -1,23 +1,17 @@
 .card {
     margin-bottom: 30px;
     height: 80%;
-    /* width: auto; */
     width: 50%;
-    /* display: flex; */
 }
 
 .img-container {
     display: flex;
-    /* flex-direction: column; */
     height: 100%;
     width: 100%;
 }
 
 .image {
-    /* display: block; */
-    /* display: table-cell; */
-    /* margin: 0 auto; */
-    /* flex: 1; */
+
     height: 100%;
     width: 100%;
 }
