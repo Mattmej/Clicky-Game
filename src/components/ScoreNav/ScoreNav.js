@@ -39,15 +39,6 @@ import ScoreDisplay from "./ScoreDisplay";
     
 
 
-
-
-
-// }
-// const ScoreNav = props => (
-
-    
-// );
-
 const ScoreNav = (props) => (
     <Navbar className="fixed-top" color="success">
         <NavItem>Clicky Game</NavItem>

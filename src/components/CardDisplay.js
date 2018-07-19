@@ -4,19 +4,6 @@ import ClickCard from "./ClickCard";
 
 class CardDisplay extends Component {
 
-    // shuffleCards = (array) => {
-    //     for (let i = 0; i < array.length; i++) {
-
-    //         // selects random number from 0 to array.length - 1
-    //         const randomNum = Math.floor(Math.random() * array.length);
-    //         // const shuffledArray = array[randomNum];
-    //         array[i] = array[randomNum];
-
-
-    //     }
-    //     return array;
-    // }
-
         // Fisher-Yates shuffle
   shuffleCards = (array) => {
     let m = array.length, t, i;
@@ -43,16 +30,6 @@ class CardDisplay extends Component {
     render() {
         return(
             <div className="row">
-                {/* <div className="col-12 col-sm-" */}
-
-
-                {/* This displays a bunch of cards */}
-                {/* {this.props.cardData.map((card) => {
-
-                    // Returns a card with props.card = [an object in the array]
-                    return <ClickCard card={card} onClick={this.handleIncrement}/>
-                })
-                } */}
 
                 {this.shuffleCards(this.props.cardData).map((card) => {
                     return <ClickCard card={card} onClick={this.handleIncrement}/>

@@ -97,6 +97,10 @@ class App extends React.Component {
         topscore: 0
     };
 
+    selectImg = (name) => {
+        
+    }
+
 
 
 
