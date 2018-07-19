@@ -185,7 +185,7 @@ class App extends React.Component {
         <div className="row">
 
             {this.shuffleCards(cardData).map((card) => {
-                return <ClickCard card={card}/>
+                return <ClickCard card={card} selectImg={this.selectImg}/>
             })}
 
         </div>

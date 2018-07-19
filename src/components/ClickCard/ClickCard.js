@@ -21,7 +21,7 @@ import ScoreNav from "../ScoreNav/ScoreNav";
 
 const ClickCard = (props) => (
         <div className = "card">
-            <div className = "img-container">
+            <div className = "img-container" onClick={() => props.selectImg(props.card.name)}>
                 <img className = "image" alt = {props.card.name} src = {props.card.picture}/>
             </div>
         </div>
